@@ -117,13 +117,13 @@ function draw()
    bubble.visible = false;
     World.remove(engine.world,fruit);
     fruit = null;
-    bunny.change('eating');
+    bunny.changeAnimation('eating');
 
     bunny.changeAnimation('eating');
 
-    bunny.changeAnimation();
+    bunny.changeAnimation("eating");
 
-    bunny.Animation('eating');
+    bunny.changeAnimation('eating');
   }
   
   if(collide(fruit,bubble,40) == true)
